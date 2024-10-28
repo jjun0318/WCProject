@@ -33,7 +33,7 @@ public class LocationController {
         ModelAndView mv = new ModelAndView();
 
         mv.addObject("jusoValue", juso);
-        mv.setViewName("/board/boardList");
+        mv.setViewName("board/boardList");
 
         return mv;
     }
