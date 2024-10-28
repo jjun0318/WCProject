@@ -54,17 +54,29 @@ public class ToiletServiceImpl implements ToiletService {
         return false; // ID가 존재하지 않으면 false 반환
     }
 
-    @Override
-    public List<WcInfo> parsingWc(String juso) {
-        switch (juso) {
-            case "해운대":
-                return wcInfoRepository.pointWc("해운대");
-            case "부전역":
-                return wcInfoRepository.pointWc("부전역");
-            default:
-                return wcInfoRepository.pointWc("내위치%");
-        }
-    }
+//    @Override
+//    public List<WcInfo> parsingWc(String juso) {
+//        switch (juso) {
+//            case "해운대":
+//                return wcInfoRepository.pointWc("해운대");
+//            case "부전역":
+//                return wcInfoRepository.pointWc("부전역");
+//            default:
+//                return wcInfoRepository.pointWc("내위치%");
+//        }
+//    }
+@Override
+public List<WcInfo> parsingWc(String juso) {
+    return wcInfoRepository.findByAddressContaining(juso);
+//        switch (juso) {
+//            case "해운대":
+//                return wcInfoRepository.pointWc("해운대");
+//            case "부전역":
+//                return wcInfoRepository.pointWc("부전역");
+//            default:
+//                return wcInfoRepository.pointWc("내위치%");
+//        }
+}
 
     @Override
     public void usePasskey(String userId) {

@@ -10,8 +10,11 @@ import java.util.List;
 public interface WcInfoRepository extends JpaRepository<WcInfo, Integer> {
 
     // 주소를 포함하는 모든 화장실 리스트 조회
-    @Query("SELECT wi FROM WcInfo wi WHERE wi.addr1 LIKE %:addr1%")
-    List<WcInfo> findByAddressContaining(@Param("addr1") String addr1);
+    @Query("SELECT wi FROM WcInfo wi WHERE wi.addr1 LIKE %:addr% OR wi.addr2 LIKE %:addr%")
+    List<WcInfo> findByAddressContaining(@Param("addr") String addr);
+
+//    @Query("SELECT wi FROM WcInfo wi WHERE wi.addr1 LIKE %:addr1%")
+//    List<WcInfo> findByAddressContaining(@Param("addr1") String addr1);
 
     // 특정 등급의 모든 화장실 리스트 조회
     @Query("SELECT wi FROM WcInfo wi WHERE wi.level = :level")
