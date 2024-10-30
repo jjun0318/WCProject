@@ -1,11 +1,14 @@
 # PublicWC
 우리들의 공공화장실
 
-# 프로젝트 기간
-> 2024.07 ~ 2024.10
+# 프로젝트
+> 개발기간 : 2024.07 ~ 2024.10
+
+# 개발인원
+> 5명
 
 # 담당역할
-> Spring JPA를 사용해 DB생성 관리 좋아요/싫어요 , 즐겨찾기 기능 구현
+> Spring JPA를 사용해 프로젝트 DB생성 관리 좋아요/싫어요 , 즐겨찾기 기능 구현
 
 # Skills
 1. 백엔드
@@ -22,11 +25,11 @@
 # ERD & USE-CASE
 <details>
 <summary>ERD</summary>
-<img src="image-1.png" alt="ERD" />
+<img src="wcERD" alt="ERD" />
 </details>
 <details>
 <summary>USE-CASE</summary>
-<img src="image.png" alt="USE-CASE" />
+<img src="wcUSECASE" alt="USE-CASE" />
 </details>
 
 # 주요기능
