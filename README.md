@@ -25,11 +25,11 @@
 # ERD & USE-CASE
 <details>
 <summary>ERD</summary>
-<img src="wcERD" alt="ERD" />
+<img src="wcERD.png" alt="ERD" />
 </details>
 <details>
 <summary>USE-CASE</summary>
-<img src="wcUSECASE" alt="USE-CASE" />
+<img src="wcUSECASE.png" alt="USE-CASE" />
 </details>
 
 # 주요기능
